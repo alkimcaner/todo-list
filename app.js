@@ -1,6 +1,11 @@
 const submit = document.getElementById("submit");
 const list = document.querySelector("ul");
-const todoList = JSON.parse(localStorage.getItem("localTODO"));
+if (todoList == null){
+    const todoList = JSON.parse(localStorage.getItem("localTODO"));
+}
+else{
+    const todoList = [];
+}
 
 class Todo_Class{
     constructor(ul){
@@ -62,7 +67,7 @@ class Todo_Class{
     }
 
     getStorage(){
-        if (localStorage.getItem("localTODO") != null, ""){
+        if (localStorage.getItem("localTODO") != ""){
             todoList.concat(JSON.parse(localStorage.getItem("localTODO")));
         }
     }
