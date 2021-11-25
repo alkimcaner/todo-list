@@ -62,7 +62,7 @@ class Todo_Class{
     }
 
     getStorage(){
-        if (localStorage.getItem("localTODO") != ""){
+        if (localStorage.getItem("localTODO") != null, ""){
             todoList.concat(JSON.parse(localStorage.getItem("localTODO")));
         }
     }
