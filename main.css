@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.inputfield{
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 255, 255);
+    border: white solid 5px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+    width: 50%;
+    margin: 50px;
+}
+
+
+
+ul{
+    background-color: rgb(36, 36, 36);
+    border: white solid 5px;
+    border-radius: 20px;
+    list-style-type: none;
+    padding: 40px;
+    width: 50%;
+    margin: 0;
+}
+
+ul li{
+    background-color: transparent;
+    border: white solid 2px;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li:hover{
+    background-color: white;
+    color: black;
+    transition: ease-in 0.5s;
+}
+
+.delete{
+    color: white;
+    padding: 5px;
+    width: 20px;
+}
