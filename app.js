@@ -1,13 +1,14 @@
 const submit = document.getElementById("submit");
 const list = document.querySelector("ul");
-const todoList = [];
 
-
+const todoList = []
+if (JSON.parse(localStorage.getItem("localTODO") != null)){
+    todoList.push(...JSON.parse(localStorage.getItem("localTODO")));
+}
 
 class Todo_Class{
     constructor(ul){
         this.list = ul;
-        todoList.concat(JSON.parse(localStorage.getItem("localTODO")));
     }
     
     add(){
