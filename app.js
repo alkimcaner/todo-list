@@ -33,7 +33,6 @@ class Todo_Class{
 
     deleteElement(itemID){
         const deleteItemIndex = todoList.findIndex( (element) => element.id == itemID);
-        console.log(deleteItemIndex);
         todoList.splice(deleteItemIndex, 1);
 
         this.saveStorage();
