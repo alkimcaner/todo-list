@@ -82,3 +82,9 @@ todoAction.display();
 submit.addEventListener("click", () => {
     todoAction.add();
 });
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == "Enter"){
+        todoAction.add();
+    }
+});
