@@ -31,8 +31,9 @@ class Todo_Class{
         document.getElementById("inputbox").value = "";
     }
 
-    deleteElement(itemIndex){
-        const deleteItemIndex = todoList.findIndex( (element) => element.id = itemIndex);
+    deleteElement(itemID){
+        const deleteItemIndex = todoList.findIndex( (element) => element.id == itemID);
+        console.log(deleteItemIndex);
         todoList.splice(deleteItemIndex, 1);
 
         this.saveStorage();
