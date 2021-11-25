@@ -1,10 +1,10 @@
 const submit = document.getElementById("submit");
 const list = document.querySelector("ul");
 if (todoList == null){
-    const todoList = JSON.parse(localStorage.getItem("localTODO"));
+    const todoList = [];
 }
 else{
-    const todoList = [];
+    const todoList = JSON.parse(localStorage.getItem("localTODO"));
 }
 
 class Todo_Class{
