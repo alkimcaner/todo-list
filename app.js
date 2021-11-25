@@ -1,15 +1,13 @@
 const submit = document.getElementById("submit");
 const list = document.querySelector("ul");
-if (typeof(todoList) == 'undefined'){
-    const todoList = [];
-}
-else{
-    todoList.concat(JSON.parse(localStorage.getItem("localTODO")));
-}
+const todoList = [];
+
+
 
 class Todo_Class{
     constructor(ul){
         this.list = ul;
+        todoList.concat(JSON.parse(localStorage.getItem("localTODO")));
     }
     
     add(){
