@@ -47,6 +47,7 @@ ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    word-break: break-all;
 }
 
 ul li:hover{
@@ -57,6 +58,7 @@ ul li:hover{
 
 .delete{
     color: white;
+    margin-left: 0.4rem;
     padding: 5px;
     width: 20px;
 }
