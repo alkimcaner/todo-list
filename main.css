@@ -1,46 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: black;
+    background-color: rgb(36, 36, 36);
     color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
     font-family: sans-serif;
 }
 
 .container{
     background-color: rgb(36, 36, 36);
+    box-shadow: 0px 2px 30px 0px black;
     color: rgb(255, 255, 255);
-    border: white solid 5px;
     border-radius: 20px;
-    padding: 40px;
+    padding: 2rem;
     text-align: center;
-    width: 40%;
+    width: 60%;
     margin: 20px;
 }
 
 .input{
     display: flex;
-    height: 30px;
+    height: 2rem;
     justify-content: center;
-    gap: 20px;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.input input {
+    border-radius: 0.5rem;
+    border-style: none;
+    outline: none;
+    padding: 0.6rem;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    z-index: 1;
+}
+
+#submit:hover {
+    cursor: pointer;
 }
 
 ul{
     background-color: rgb(36, 36, 36);
-    border: white solid 5px;
+    box-shadow: 0px 2px 30px 0px black;
     border-radius: 20px;
     list-style-type: none;
-    padding: 40px;
-    width: 40%;
+    padding: 1rem;
+    width: 60%;
+    min-height: 6rem;
     margin: 0;
 }
 
 ul li{
     background-color: transparent;
-    border: white solid 2px;
     color: white;
+    box-shadow: 0px 2px 10px 0px black;
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
@@ -51,14 +71,16 @@ ul li{
 }
 
 ul li:hover{
-    background-color: white;
-    color: black;
-    transition: ease-in 0.5s;
+    background-color: rgb(48, 48, 48);
+    transition: ease-in 0.1s;
 }
 
 .delete{
     color: white;
     margin-left: 0.4rem;
-    padding: 5px;
-    width: 20px;
+    width: 1.5rem;
+}
+
+.delete:hover {
+    cursor: pointer;
 }
